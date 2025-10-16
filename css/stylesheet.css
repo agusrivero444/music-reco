@@ -1,0 +1,361 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    /* bien bold */
+}
+
+p,
+a,
+li {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+/*header*/
+
+.logo {
+    height: 70px;
+    /* ajustás el tamaño */
+    margin-left: 140px;
+}
+
+body {
+    background-color: rgb(10, 11, 39);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    color: #F2E8D5;
+    /* crema */
+}
+
+h2 {
+    color: #F2E8D5;
+    /* verde Spotify con código HEX */
+}
+
+p {
+    color: #F2E8D5;
+    /* crema */
+}
+
+li {
+    display: inline-block;
+    margin: 15px
+}
+
+li a {
+    color: white;
+    padding: 10px 30px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+
+}
+
+li a:hover {
+    color: #E63946;
+}
+
+
+header {
+    background-color: #1b1447;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    /* asegura que todo quede centrado verticalmente */
+    justify-content: space-between;
+    background: #E63946;
+    /* barra roja */
+    padding: 10px 20px;
+}
+
+/* buscador */
+.nav-search {
+    display: flex;
+    align-items: center;
+    background: rgba(0, 0, 0, .15);
+    padding: 6px 144px;
+    border-radius: 999px;
+}
+
+.nav-search input {
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #fff;
+    width: 200px;
+}
+
+.nav-search input::placeholder {
+    color: #f8f8f8;
+    opacity: .8;
+}
+
+.nav-search button {
+    border: none;
+    background: #000;
+    color: #fff;
+    padding: 6px 10px;
+    border-radius: 999px;
+    cursor: pointer;
+}
+
+/*body*/
+
+.pick_del_dia {
+    padding: 80px 200px 80px 200px
+}
+
+.pick_del_dia h1 {
+    font-size: 60px;
+}
+
+/* Contenedor general */
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+/* Tarjeta del hero */
+.hero-card {
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    /* borde sutil */
+    border-radius: 0;
+    /* puntas cuadradas */
+    padding: 28px 32px;
+    /* espacio interno */
+    margin: 32px auto 20px;
+    /* separación */
+    color: #fff;
+    /* texto blanco */
+    text-align: left;
+    /* texto alineado a la izquierda */
+    width: 80%;
+    /* ancho adaptable */
+}
+
+/* Título y texto dentro de la tarjeta */
+.hero-card h1 {
+    margin: 0 0 10px;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.hero-card p {
+    margin: 0 0 18px;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    opacity: 0.92;
+}
+
+.gracie_abrams {
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.texto_gracie {
+    padding: 80px 250px 120px 250px;
+    margin: 0 au;
+    font-size: 18px;
+    font-family: "Merriweather", serif;
+    font-style: normal;
+
+    p {
+        line-height: 1.6;
+        font-size: 1.1rem;
+    }
+}
+
+/* contenedor oscuro para tu estética */
+.carousel {
+    max-width: 980px;
+    margin: 24px auto;
+    padding: 0 12px;
+}
+
+/* cinta de imágenes */
+.carousel .track {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 100%;
+    gap: 12px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    border-radius: 12px;
+}
+
+/* cada slide */
+.carousel img {
+    width: 100%;
+    height: 650px;
+    /* ajustá */
+    object-fit: cover;
+    border-radius: 12px;
+    scroll-snap-align: center;
+}
+
+/* puntos */
+.carousel .dots {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    margin-top: 12px;
+}
+
+.carousel .dots a {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #777;
+    display: inline-block;
+}
+
+.carousel .dots a:hover {
+    background: #fff;
+}
+
+.video {
+    display: flex;
+    justify-content: center;
+}
+
+.descubre_tu_sonido_perfecto {
+    text-align: center;
+    margin-top: 112px;
+    margin-bottom: 20px;
+}
+
+.filtra_y_encuentra {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 80px;
+}
+
+/* Grid general */
+.feature-grid {
+    display: grid;
+    gap: 30px;
+    margin: 60px auto;
+    max-width: 1100px;
+    padding: 0 20px;
+}
+
+@media (min-width: 900px) {
+    .feature-grid {
+        grid-template-columns: 1fr 1fr;
+        /* 2 columnas */
+    }
+}
+
+/* Tarjeta base */
+.card {
+    position: relative;
+    min-height: 320px;
+    border-radius: 14px;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    /* texto abajo */
+    color: #fff;
+    text-decoration: none;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Overlay para mejorar legibilidad */
+.card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7));
+}
+
+.card-content {
+    position: relative;
+    background: transparent;
+    z-index: 1;
+    /* sobre el overlay */
+    padding: 20px;
+}
+
+/* Estilos de texto */
+.eyebrow {
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+.card h3 {
+    margin: 8px 0;
+    font-size: 1.5rem;
+}
+
+.card p {
+    margin: 0 0 12px;
+    font-size: 1rem;
+    opacity: 0.9;
+}
+
+.cta {
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.cta:hover {
+    color: #E63946;
+}
+
+/* Imágenes específicas */
+.card-genero {
+    background-image: url("../img/muusic.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card-mood {
+    background-image: url("../img/serifa.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.quienes_somos {
+    padding: 120px 80px;
+    text-align: center;
+}
+
+.quienes_somos h2 {
+    margin-bottom: 20px;
+}
+
+section img {
+    display: block;
+    margin: 30px auto;
+    /* centra la imagen */
+    width: 80%;
+    /* ocupa el 80% del ancho de la pantalla */
+    max-width: 800px;
+    /* no se agranda más de 800px */
+    border-radius: 8px;
+    /* esquinas suaves (opcional) */
+}
